@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 110%;
+    width: 100%;
+}
+body{
+    font-family: "Lato", sans-serif;
+}
+.contaier{
+    height: 105%;
+    width: 100%;
+    background-color: #fef5e4;
+    
+}
+header{
+    display: flex;
+    align-items: center;
+    padding: 2% 12%;
+}
+header h2{
+    width: 25%;
+    color: #105157;
+    font-size: 40px;
+}
+header ul{
+    width: 75%;
+    display: flex;
+    gap: 8%;
+    font-size: 17px;
+    font-weight: 800;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+}
+#pricing{
+    color: #105157;
+}
+header li:hover{
+    color: #105157;
+}
+header .menu-icon{
+    display: none;
+}
+
+.box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3%;
+    /* padding: 3% 12%; */
+}
+.box p{
+    color: #8d8f96;
+    font-size: 18px;
+    font-weight: 600;
+}
+.box h2{
+    padding-top: 1%;
+    color: #105157;
+    font-size: 50px;
+    font-weight: 800;
+
+}
+
+.box .cards {
+    width: 76%;
+    margin-top: 3%;
+    display: flex;
+    gap: 3%;
+}
+.box .cards .card1{
+    width: 30%;
+    padding:2% 2%;
+    padding-left: 4%;
+    border: 2px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    border: 3px solid #0e4348;
+}
+.card1 > #limited{
+    padding-top: 3%;
+    color: rgba(0, 0, 0, 0.29);
+}
+.card1 > #time{
+    color: rgba(0, 0, 0, 0.29);
+    font-size: 15px;
+}
+.card1 h1{
+    padding: 5% 0%;
+    font-size: 40px;
+    font-weight: 900;
+}
+.card1 ul{
+    padding-top: 10%; 
+}
+.card1 ul li{
+    padding: 5% 2%;
+}
+.card1 button{
+    padding: 5% 25%;
+    border-radius: 8px;
+    border: none;
+    background: #f5f7f6;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.128);
+    font-weight: 600;
+}
+
+
+.box .cards .card2{
+    width: 30%;
+    padding:2% 2%;
+    padding-left: 4%;
+    background-color: #0e4348;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+.card2 > #limited{
+    padding-top: 3%;
+    color: #e9dcc7;
+}
+.card2 > #time{
+    color: rgba(0, 0, 0, 0.29);
+    font-size: 15px;
+}
+.card2 h2{
+    color: #e9dcc7;
+}
+.card2 h1{
+    padding: 5% 0%;
+    font-size: 40px;
+    font-weight: 900;
+    color: #e9dcc7;
+}
+.card2 ul{
+    padding-top: 10%; 
+    color: #e9dcc7;
+}
+.card2 ul li{
+    padding: 5% 2%;
+}
+.card2 button{
+    padding: 5% 25%;
+    border-radius: 8px;
+    border: none;
+    background-color:#fd8100 ;
+    font-weight: 700;
+}
+
+.box .cards .card3{
+    width: 30%;
+    padding:2% 2%;
+    padding-left: 4%;
+    border: 2px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    border: 3px solid #0e4348;
+}
+.card3 > #limited{
+    padding-top: 3%;
+    color: rgba(0, 0, 0, 0.29);
+}
+.card3 > #time{
+    color: rgba(0, 0, 0, 0.29);
+    font-size: 15px;
+}
+.card3 h1{
+    padding: 5% 0%;
+    font-size: 40px;
+    font-weight: 900;
+}
+.card3 ul{
+    padding-top: 10%; 
+}
+.card3 ul li{
+    padding: 5% 2%;
+}
+.card3 button{
+    padding: 5% 25%;
+    border-radius: 8px;
+    border: none;
+    background: #f5f7f6;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.128);
+    font-weight: 600;
+}
+
+@media screen and (max-width: 650px){
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    header ul{
+        display: none;
+    }
+    header .menu-icon{
+        display: initial;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .cards{
+        
+        flex-direction: column;
+        padding-left:15% ;
+        
+    }
+    .box .cards .card1{
+        width: 70%;
+        margin-bottom: 5%;
+    }
+    .box .cards .card2{
+        width: 70%;
+        margin-bottom: 5%;
+    }
+    .box .cards .card3{
+        width: 70%;
+    }
+   
+}
